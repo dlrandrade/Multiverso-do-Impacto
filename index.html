@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiverse of Impact Hero Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Teko:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-blue-deep: #0d0f2b;
+        --brand-blue-mid: #1e293b;
+        --brand-blue-light: #4c5bff;
+        --brand-yellow: #facc15;
+        --font-heading: 'Teko', sans-serif;
+        --font-body: 'Manrope', sans-serif;
+      }
+      body {
+        background-color: #030419;
+        background-image: radial-gradient(circle at top right, rgba(76, 91, 255, 0.2), transparent 40%),
+                          radial-gradient(circle at bottom left, rgba(76, 91, 255, 0.2), transparent 40%);
+        font-family: var(--font-body);
+      }
+      .font-heading {
+        font-family: var(--font-heading);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

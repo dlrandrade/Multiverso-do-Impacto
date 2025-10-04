@@ -1,0 +1,31 @@
+export enum AppState {
+  IDLE,
+  IMAGE_SELECTED,
+  GENERATING_HERO,
+  BACKGROUND_REMOVAL,
+  REMOVING_BACKGROUND,
+  PREVIEW_TRANSPARENT,
+  COMPOSING,
+  ERROR,
+}
+
+export enum ODS {
+    NONE = "Nenhuma",
+    ODS1 = "ODS 1: Erradicação da Pobreza",
+    ODS2 = "ODS 2: Fome Zero e Agricultura Sustentável",
+    ODS3 = "ODS 3: Saúde e Bem-Estar",
+    ODS4 = "ODS 4: Educação de Qualidade",
+    ODS5 = "ODS 5: Igualdade de Gênero",
+    ODS6 = "ODS 6: Água Potável e Saneamento",
+    ODS7 = "ODS 7: Energia Limpa e Acessível",
+    ODS8 = "ODS 8: Trabalho Decente e Crescimento Econômico",
+    ODS9 = "ODS 9: Indústria, Inovação e Infraestrutura",
+    ODS10 = "ODS 10: Redução das Desigualdades",
+    ODS11 = "ODS 11: Cidades e Comunidades Sustentáveis",
+    ODS12 = "ODS 12: Consumo e Produção Responsáveis",
+    ODS13 = "ODS 13: Ação Contra a Mudança Global do Clima",
+    ODS14 = "ODS 14: Vida na Água",
+    ODS15 = "ODS 15: Vida Terrestre",
+    ODS16 = "ODS 16: Paz, Justiça e Instituições Eficazes",
+    ODS17 = "ODS 17: Parcerias e Meios de Implementação",
+}
