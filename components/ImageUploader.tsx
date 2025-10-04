@@ -25,7 +25,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({
   backgroundFile,
   onBackgroundChange,
   selectedODS,
-  onODSChange
+  onODSChange,
 }) => {
   const [isDragging, setIsDragging] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);

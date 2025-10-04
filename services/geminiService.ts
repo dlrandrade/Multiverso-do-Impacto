@@ -1,6 +1,8 @@
 import { GoogleGenAI, GenerateContentResponse, Modality } from "@google/genai";
 import { ODS } from "../types";
 
+const API_KEY = 'AIzaSyDuAvZ_K9WhWTbF7dumyHn-SIJRXaqqHr4';
+
 const fileToGenerativePart = async (file: File) => {
   const base64EncodedDataPromise = new Promise<string>((resolve) => {
     const reader = new FileReader();
@@ -86,11 +88,11 @@ ${characterInstructions}
 
 
 export const generateHeroImage = async (imageFile: File, customPrompt: string, ods: ODS): Promise<string> => {
-    if (!process.env.API_KEY) {
-        throw new Error("API_KEY environment variable is not set.");
+    if (!API_KEY) {
+        throw new Error("A chave da API do Gemini não foi fornecida.");
     }
 
-    const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    const ai = new GoogleGenAI({ apiKey: API_KEY });
     
     const imagePart = await fileToGenerativePart(imageFile);
     const textPart = { text: buildPrompt(customPrompt, ods) };
@@ -118,5 +120,5 @@ export const generateHeroImage = async (imageFile: File, customPrompt: string, o
         }
     }
 
-    throw new Error("Failed to generate image. The model did not return a valid image part.");
+    throw new Error("Falha ao gerar a imagem. O modelo não retornou uma parte de imagem válida.");
 };
